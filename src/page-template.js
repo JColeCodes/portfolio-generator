@@ -22,7 +22,7 @@ const generateProjects = projectsArr => {
             .map(({ name, description, languages, link }) => {
                 return `
                 <div class="col-12 mb-2 bg-dark text-light p-3 flex-column">
-                    <h3 class="portfolio-item-title text-light">${name}</div>
+                    <h3 class="portfolio-item-title text-light">${name}</h3>
                     <h5 class="portfolio-languages">
                         Built With: 
                         ${languages.join(", ")}
@@ -39,7 +39,7 @@ const generateProjects = projectsArr => {
             .map(({ name, description, languages, link }) => {
                 return `
                 <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-                    <h3 class="portfolio-item-title text-light">${name}</div>
+                    <h3 class="portfolio-item-title text-light">${name}</h3>
                     <h5 class="portfolio-languages">
                         Built With: 
                         ${languages.join(", ")}
@@ -78,7 +78,7 @@ module.exports = templateData => {
             <div class="container flex-row justify-space-between align-center py-3">
                 <h1 class="page-title text-secondary bg-dark py-2 px-3">${header.name}</h1>
                 <nav class="flex-row">
-                    <a lass="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${header.github}">Github</a>
+                    <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${header.github}">Github</a>
                 </nav>
             </div>
         </header>
